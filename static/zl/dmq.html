@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--H5点名器-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>幸运星</title>
+<style>
+.div{border:2px solid #aaaaaa;text-align:center;font-family: KaiTi;}
+#cc {border-width: 0px;background: #ffffff;cursor: pointer;outline: none;font-family: KaiTi;color: #000000;font-size: 100px;}
+</style>
+</head>
+<body>
+<div style="width:1250px;height:590px">
+<table border="0" style="width:100%">
+    <th width="33%" style="text-align:left"><a onclick="startorstop()">运行</a><br><a style="font-size:100%;text-align:center" onclick="window.close();">关闭</a></th>
+    <th width="33%" style="text-align:right"><a onclick="startorstop()">运行</a><br><a style="font-size:100%;text-align:center" onclick="window.close();">关闭</a></th>
+</table>
+<script>
+var time=null;
+var list="路人甲,路人乙,路人丙,路人丁,路人戊,路人己,路人庚,路人辛,路人壬,路人癸".split(",");//名单
+var bol = false;
+function startRun(){
+document.getElementById("cc").value="停止";
+var i=Math.random()*list.length;
+i=Math.floor(i);
+document.getElementById("award").innerText=list[i];
+time=setTimeout("startRun()",10);
+}
+function stopRun(){
+document.getElementById("cc").value="开始";
+clearTimeout(time);
+}
+function startorstop(){
+if(bol)
+stopRun();
+else
+startRun();
+bol = !bol;
+}
+</script>
+<div style="text-align:center;margin:4% 23% 1%">
+<div class="div" id="award" style="font-size:190px;height:220px;width:640px;color:red;text-align:center" onclick="startorstop()">幸运星</div><br><br><br>
+<input type="button" id="cc" value="开始" onclick="startorstop()"><br>
+</div>
+<div style="text-align:center">注：点四周的“运行”也可以进行操作，点四周的“关闭”关闭此网页</div>
+<table border="0" style="width:100%">
+    <th width="33%" style="text-align:left"><a onclick="startorstop()">运行</a><br><a style="font-size:100%;text-align:center" onclick="window.close();">关闭</a></th>
+    <th width="33%"><a style="font-size:100%;text-align:center" onclick="window.close();">关闭</a></th>
+    <th width="33%" style="text-align:right"><a onclick="startorstop()">运行</a><br><a style="font-size:100%;text-align:center" onclick="window.close();">关闭</a></th>
+</table>
+</div>
+</body>
+</html>

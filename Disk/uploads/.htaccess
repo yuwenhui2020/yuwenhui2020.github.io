@@ -1,0 +1,3 @@
+# begin VFM rules
+php_flag engine off
+# end VFM rules
