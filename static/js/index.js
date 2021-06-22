@@ -13,6 +13,7 @@ if(o(t).addClass("active").siblings(".active").removeClass("active"),o(".search-
 o(t).hasClass("baidu"))o(".search-form").attr("action","https://www.baidu.com/s"),o(".search-keyword").attr({name:"word",placeholder:"百度一下，你就知道"})
 else if(o(t).hasClass("geng"))o(".search-form").attr("action","https://jikipedia.com/search"),o(".search-keyword").attr({name:"phrase",placeholder:"网络流行梗搜索"})
 else if(o(t).hasClass("mail"))o(".search-form").attr("action","https://search.jd.com/Search"),o(".search-keyword").attr({name:"keyword",placeholder:"京东，轻松购物"})
+else if(o(t).hasClass("taobao"))o(".search-form").attr("action","https://uland.taobao.com/sem/tbsearch"),o(".search-keyword").attr({name:"keyword",placeholder:"精选好物_享受生活_放心购官方！"})
 else if(o(t).hasClass("bilibili"))o(".search-form").attr("action","https://search.bilibili.com/all"),o(".search-keyword").attr({name:"keyword",placeholder:"BiliBili搜索"})
 else if(o(t).hasClass("github"))o(".search-form").attr("action","https://github.com/search"),o(".search-keyword").attr({name:"q",placeholder:"GitHub项目搜索"})
 else if(o(t).hasClass("scholar"))o(".search-form").attr("action","https://xueshu.baidu.com/s"),o(".search-keyword").attr({name:"wd",placeholder:"中英文文献检索"})
