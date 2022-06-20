@@ -46,29 +46,7 @@ console.log(str);
 			</div>
 		</div>
 	</div>
-
-<script type="text/javascript">
-function getRTime() {
-	var EndTime = new Date("2022/06/08 17:00:00"); //截止时间
-	var NowTime = new Date();
-	var t = EndTime.getTime() - NowTime.getTime();
-	var d = Math.floor(t / 1000 / 60 / 60 / 24);
-	var h = Math.floor(t / 1000 / 60 / 60 % 24);
-	var m = Math.floor(t / 1000 / 60 % 60);
-	var s = Math.floor(t / 1000 % 60);
-	document.getElementById("t_d").innerHTML ="距离2022年高考结束还有" + d + "天";
-	document.getElementById("t_h").innerHTML = h + "时";
-	document.getElementById("t_m").innerHTML = m + "分";
-	document.getElementById("t_s").innerHTML = s + "秒";
-}
-setInterval(getRTime, 1000);
-</script>
-<div class="timebox2">
-	<div class="timetext">
-		<div style="text-align:center;margin-top:30px"><span id="t_d"></span><span id="t_h"></span><span id="t_m"></span><span id="t_s"></span></div>
-	</div>
-</div>
-<a>搜索前请选择搜索方式</a>
+<a>搜索前按需选择搜索方式</a>
 	<!--<a href="https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u">直播源</a>-->
 	<div class="works">
 		<div class="work-link">
@@ -92,8 +70,8 @@ setInterval(getRTime, 1000);
 			<script>document.getElementById("current-year").innerHTML=(new Date).getFullYear()</script>
 			</span>&nbsp;导航页<br>
 			<a href="https://res.viayoo.com/v1/via-release-cn.apk">下载浏览器</a><br>
-			<a hrfe="lrc.html">歌词在线制作</a>
-			<a hrfe="unlock.html">音乐解锁</a>
+			<a hrfe="/lrc.html">歌词在线制作</a>
+			<a hrfe="/unlock.html">音乐解锁</a>
 			<!--<a>"refresh_token":"a72d5bd815a64f9b8a8fd51b210dd06e"</a>-->
 		<div>
 		
