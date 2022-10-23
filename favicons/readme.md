@@ -1,1 +1,1 @@
-some icons about lrc.macker
+some icons about lrc.maker
